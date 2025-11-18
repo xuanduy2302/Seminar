@@ -2,6 +2,8 @@
 
 Ứng dụng phân loại cảm xúc câu tiếng Việt sử dụng mô hình Transformer
 
+
+
 🚀 Giới thiệu
 
 Đây là ứng dụng phân loại cảm xúc tiếng Việt (Positive – Neutral – Negative), được xây dựng cho đồ án môn Seminar Chuyên Đề.
@@ -24,6 +26,8 @@ Tải thêm lịch sử (pagination đơn giản)
 
 Ứng dụng chạy giao diện bằng Streamlit, nhẹ, dễ dùng và chạy độc lập.
 
+
+
 🛠 Công nghệ sử dụng
 
 Python 3.10+
@@ -37,6 +41,8 @@ Underthesea (xử lý tiếng Việt)
 Streamlit (UI)
 
 SQLite (lịch sử phân loại)
+
+
 
 📦 Cài đặt môi trường
 1. Clone dự án hoặc tải zip
@@ -60,6 +66,8 @@ source venv/bin/activate
 3. Cài thư viện
 pip install -r requirements.txt
 
+
+
 ▶️ Chạy ứng dụng
 
 Chạy lệnh:
@@ -70,6 +78,8 @@ streamlit run app.py
 Sau đó trình duyệt sẽ tự mở tại:
 
 http://localhost:8501
+
+
 
 📌 Tính năng chính
 1. Nhập câu tiếng Việt
@@ -116,6 +126,8 @@ Negative
 
 Tất cả
 
+
+
 🧪 Bộ test case
 
 Ứng dụng kèm theo 10 test case chuẩn trong file test_cases.csv (theo yêu cầu đồ án).
@@ -128,6 +140,8 @@ Món ăn này dở quá	NEGATIVE
 Thời tiết bình thường	NEUTRAL
 
 Độ chính xác yêu cầu tối thiểu: ≥ 65%
+
+
 
 📁 Cấu trúc thư mục
 DoAn_SentimentAssistant/
@@ -149,6 +163,8 @@ DoAn_SentimentAssistant/
 └─ demo/
     └─ video_demo.mp4     # Video trình bày
 
+
+
 📝 Yêu cầu đầu ra (Chuẩn theo đề bài)
 
 Ứng dụng trả kết quả dạng dictionary như sau:
@@ -157,6 +173,8 @@ DoAn_SentimentAssistant/
     "text": "Bạn khỏe không?",
     "sentiment": "POSITIVE"
 }
+
+
 
 📚 Tài liệu tham khảo
 
@@ -167,6 +185,8 @@ Mô hình ViSoBERT
 Underthesea
 
 Streamlit
+
+
 
 🎉 Ghi chú
 
