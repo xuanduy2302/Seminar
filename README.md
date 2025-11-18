@@ -1,10 +1,10 @@
-📘 Trợ lý phân loại cảm xúc tiếng Việt
+# 📘 Trợ lý phân loại cảm xúc tiếng Việt
 
 Ứng dụng phân loại cảm xúc câu tiếng Việt sử dụng mô hình Transformer
 
 
 
-🚀 Giới thiệu
+# 🚀 Giới thiệu
 
 Đây là ứng dụng phân loại cảm xúc tiếng Việt (Positive – Neutral – Negative), được xây dựng cho đồ án môn Seminar Chuyên Đề.
 
@@ -28,7 +28,7 @@ Tải thêm lịch sử (pagination đơn giản)
 
 
 
-🛠 Công nghệ sử dụng
+# 🛠 Công nghệ sử dụng
 
 Python 3.10+
 
@@ -44,7 +44,7 @@ SQLite (lịch sử phân loại)
 
 
 
-📦 Cài đặt môi trường
+# 📦 Cài đặt môi trường
 1. Clone dự án hoặc tải zip
 git clone <repo_url>
 
@@ -68,7 +68,7 @@ pip install -r requirements.txt
 
 
 
-▶️ Chạy ứng dụng
+# ▶️ Chạy ứng dụng
 
 Chạy lệnh:
 
@@ -81,7 +81,7 @@ http://localhost:8501
 
 
 
-📌 Tính năng chính
+# 📌 Tính năng chính
 1. Nhập câu tiếng Việt
 
 Hỗ trợ không dấu
@@ -128,7 +128,7 @@ Tất cả
 
 
 
-🧪 Bộ test case
+# 🧪 Bộ test case
 
 Ứng dụng kèm theo 10 test case chuẩn trong file test_cases.csv (theo yêu cầu đồ án).
 
@@ -143,7 +143,7 @@ Thời tiết bình thường	NEUTRAL
 
 
 
-📁 Cấu trúc thư mục
+# 📁 Cấu trúc thư mục
 DoAn_SentimentAssistant/
 │
 ├─ app.py                 # App Streamlit chính
@@ -165,7 +165,7 @@ DoAn_SentimentAssistant/
 
 
 
-📝 Yêu cầu đầu ra (Chuẩn theo đề bài)
+# 📝 Yêu cầu đầu ra (Chuẩn theo đề bài)
 
 Ứng dụng trả kết quả dạng dictionary như sau:
 
@@ -176,7 +176,7 @@ DoAn_SentimentAssistant/
 
 
 
-📚 Tài liệu tham khảo
+# 📚 Tài liệu tham khảo
 
 HuggingFace Transformers
 
@@ -188,7 +188,7 @@ Streamlit
 
 
 
-🎉 Ghi chú
+# 🎉 Ghi chú
 
 Ứng dụng không cần fine-tuning, dùng pipeline để đơn giản hóa.
 
