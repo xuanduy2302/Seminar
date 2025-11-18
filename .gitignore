@@ -1,0 +1,16 @@
+# Ignore Python venv
+venv/
+.env/
+
+# Ignore SQLite database
+db/*.db
+
+# Ignore Streamlit cache
+.streamlit/
+
+# Ignore pycache
+__pycache__/
+*.pyc
+
+# Ignore OS files
+.DS_Store

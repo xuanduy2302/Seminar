@@ -1,0 +1,11 @@
+text,expected
+Hôm nay tôi rất vui,POSITIVE
+Món ăn này dở quá,NEGATIVE
+Thời tiết bình thường,NEUTRAL
+Rat vui hom nay,POSITIVE
+Công việc ổn định,NEUTRAL
+Phim này hay lắm,POSITIVE
+Tôi buồn vì thất bại,NEGATIVE
+Ngày mai đi học,NEUTRAL
+Cảm ơn bạn rất nhiều,POSITIVE
+Mệt mỏi quá hôm nay,NEGATIVE

@@ -1,0 +1,4 @@
+transformers
+torch
+underthesea
+streamlit
