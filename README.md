@@ -4,7 +4,7 @@
 
 
 
-# 🚀 Giới thiệu
+## 🚀 Giới thiệu
 
 Đây là ứng dụng phân loại cảm xúc tiếng Việt (Positive – Neutral – Negative), được xây dựng cho đồ án môn Seminar Chuyên Đề.
 
@@ -28,7 +28,7 @@ Tải thêm lịch sử (pagination đơn giản)
 
 
 
-# 🛠 Công nghệ sử dụng
+## 🛠 Công nghệ sử dụng
 
 Python 3.10+
 
@@ -44,45 +44,48 @@ SQLite (lịch sử phân loại)
 
 
 
-# 📦 Cài đặt môi trường
-1. Clone dự án hoặc tải zip
+## 📦 Cài đặt môi trường
+### 1. Clone dự án hoặc tải zip
+```bash
 git clone <repo_url>
-
-2. Tạo môi trường ảo (khuyến khích)
+```
+### 2. Tạo môi trường ảo (khuyến khích)
+```bash
 python -m venv venv
-
+```
 
 Kích hoạt:
 
 Windows
-
+```bash
 venv\Scripts\activate
-
+```
 
 MacOS / Linux
-
+```bash
 source venv/bin/activate
-
-3. Cài thư viện
+```
+### 3. Cài thư viện
+```bash
 pip install -r requirements.txt
+```
 
 
-
-# ▶️ Chạy ứng dụng
+## ▶️ Chạy ứng dụng
 
 Chạy lệnh:
-
+```bash
 streamlit run app.py
-
+```
 
 Sau đó trình duyệt sẽ tự mở tại:
-
+```bash
 http://localhost:8501
+```
 
 
-
-# 📌 Tính năng chính
-1. Nhập câu tiếng Việt
+## 📌 Tính năng chính
+### 1. Nhập câu tiếng Việt
 
 Hỗ trợ không dấu
 
@@ -90,13 +93,13 @@ Hỗ trợ viết tắt (ko → không, dc → được…)
 
 Phát hiện câu vô nghĩa và cảnh báo
 
-2. Chuẩn hoá câu
+### 2. Chuẩn hoá câu
 
 Hiển thị câu gốc và câu đã chuẩn hoá
 
 Mapping hơn 100 từ không dấu → có dấu
 
-3. Phân loại cảm xúc
+### 3. Phân loại cảm xúc
 
 3 nhãn: POSITIVE / NEUTRAL / NEGATIVE
 
@@ -108,7 +111,7 @@ Hiển thị màu:
 
 🔴 Negative
 
-4. Lịch sử phân loại
+### 4. Lịch sử phân loại
 
 Lưu vào SQLite
 
@@ -128,7 +131,7 @@ Tất cả
 
 
 
-# 🧪 Bộ test case
+## 🧪 Bộ test case
 
 Ứng dụng kèm theo 10 test case chuẩn trong file test_cases.csv (theo yêu cầu đồ án).
 
@@ -143,7 +146,8 @@ Thời tiết bình thường	NEUTRAL
 
 
 
-# 📁 Cấu trúc thư mục
+## 📁 Cấu trúc thư mục
+```bash
 DoAn_SentimentAssistant/
 │
 ├─ app.py                 # App Streamlit chính
@@ -162,21 +166,21 @@ DoAn_SentimentAssistant/
 │
 └─ demo/
     └─ video_demo.mp4     # Video trình bày
+```
 
 
-
-# 📝 Yêu cầu đầu ra (Chuẩn theo đề bài)
+## 📝 Yêu cầu đầu ra (Chuẩn theo đề bài)
 
 Ứng dụng trả kết quả dạng dictionary như sau:
-
+```bash
 {
     "text": "Bạn khỏe không?",
     "sentiment": "POSITIVE"
 }
+```
 
 
-
-# 📚 Tài liệu tham khảo
+## 📚 Tài liệu tham khảo
 
 HuggingFace Transformers
 
@@ -188,7 +192,7 @@ Streamlit
 
 
 
-# 🎉 Ghi chú
+## 🎉 Ghi chú
 
 Ứng dụng không cần fine-tuning, dùng pipeline để đơn giản hóa.
 
