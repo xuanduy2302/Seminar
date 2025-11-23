@@ -144,6 +144,12 @@ history = get_history(
     sentiment=sentiment_filter,
 )
 
+def load_more():
+    st.session_state["history_limit"] += st.session_state.get("history_increment", 10)
+
+
+
+
 if not history:
     st.info("Chưa có lịch sử nào khớp với bộ lọc hiện tại.")
 else:
@@ -171,3 +177,9 @@ else:
             """,
             unsafe_allow_html=True
         )
+
+    if len(history) >= st.session_state["history_limit"]:
+        if "history_increment" not in st.session_state:
+            st.session_state["history_increment"] = 10  
+        if st.button("Tải thêm", on_click=load_more):
+            st.session_state["history_limit"] += st.session_state["history_increment"]
